@@ -1,6 +1,5 @@
 # NFT_Marketplace
 [https://shrayank.notion.site/NFT-Market-Place-466c9b5dd27d4385b396b0b7034fc213]
-![alt text](https://drive.google.com/uc?export=view&id=1B0QnrbP6DGyew7jhihofxBL2QjJELtBC)
 ## 🔧 Tech Stack 
 <p align="center">
 
@@ -17,6 +16,8 @@
 <img src="https://img.shields.io/badge/Infura-B7472A?style=for-the-badge&logo=Infura&logoColor=white" alt="Infura"/>
 <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="vercel"/>
 </p>
+![alt text](https://drive.google.com/uc?export=view&id=1B0QnrbP6DGyew7jhihofxBL2QjJELtBC)
+
 ## 📩 Contact Me 👇
 
 <a href="https://github.com/hrshrayank">
