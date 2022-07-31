@@ -16,7 +16,10 @@
 <img src="https://img.shields.io/badge/Infura-B7472A?style=for-the-badge&logo=Infura&logoColor=white" alt="Infura"/>
 <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="vercel"/>
 </p>
+
+
 ##  [🌐 Demo](https://nft-marketplace-pi-two.vercel.app/)
+
 ![alt text](https://drive.google.com/uc?export=view&id=1B0QnrbP6DGyew7jhihofxBL2QjJELtBC)
 
 ## 📩 Contact Me 👇
