@@ -1,4 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
+
 require("dotenv").config({ path: ".env" });
 
 const ALCHEMY_API_KEY_URL = process.env.ALCHEMY_API_KEY_URL;
@@ -14,4 +15,3 @@ module.exports = {
     },
   },
 };
-// 0x88209A100f697B6D7A29F8154036d3CeB04Bfd28

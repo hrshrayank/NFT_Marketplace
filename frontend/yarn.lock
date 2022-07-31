@@ -2812,6 +2812,11 @@
   "resolved" "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
   "version" "5.1.1"
 
+"react-countdown-circle-timer@^3.0.9":
+  "integrity" "sha512-2rE2NklqgtArbvM9RVR3NctiKQ8+lY8PEjUZ2S1pKowD8CmaXUGqIaCbFBcygYH2aZQs9qPIQA49Z+9Jc2TOiQ=="
+  "resolved" "https://registry.npmjs.org/react-countdown-circle-timer/-/react-countdown-circle-timer-3.0.9.tgz"
+  "version" "3.0.9"
+
 "react-dom@^16.8.6":
   "integrity" "sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz"
@@ -2851,7 +2856,7 @@
     "object-assign" "^4.1.1"
     "prop-types" "^15.6.2"
 
-"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.2.0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@18.2.0":
+"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.2.0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.8.0", "react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -3193,6 +3198,11 @@
   "version" "5.0.1"
   dependencies:
     "is-number" "^7.0.0"
+
+"truncate-eth-address@^1.0.2":
+  "integrity" "sha512-MLGSzEIDam9XdBQejtCpQfdbgXfYTEkQseqpz+Pcqu6SEvvVC4mYniWFp4n8VG+KOi6jYVtUfA6cqWecSvS3rw=="
+  "resolved" "https://registry.npmjs.org/truncate-eth-address/-/truncate-eth-address-1.0.2.tgz"
+  "version" "1.0.2"
 
 "tsconfig-paths@^3.14.1":
   "integrity" "sha512-fxDhWnFSLt3VuTwtvJt5fpwxBHg5AdKWMsgcPOOIilyjymcYVZoCQF8fvFRezCNfblEXmi+PcM1eYHeOAgXCOQ=="
