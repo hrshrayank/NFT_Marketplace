@@ -5,8 +5,6 @@ import Web3Modal from "web3modal";
 import {
   NFT_CONTRACT_ABI,
   NFT_CONTRACT_ADDRESS,
-  PRESALE_CONTRACT_ADDRESS,
-  PRESALE_CONTRACT_ABI,
 } from "../constants";
 import styles from "../styles/Home.module.css";
 import truncateEthAddress from "truncate-eth-address";

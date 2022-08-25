@@ -3,13 +3,15 @@ pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "./Register.sol";
 
 contract NFT is ERC721Enumerable, Ownable {
     using Strings for uint256;
-    Register presale;
+   
     //Variables
-    string baseURI = "ipfs://QmamJdFSvKcT9XbP6NvoCkhzs2DhRrckNPPx4kJhRBJKWE/";
+    uint8 public maxPresaleAddr =10;
+    uint8 public countAddr;
+    mapping(address => bool) public presaleAddresses;
+    string baseURI = "ipfs://Qmd39mGinRjewA6rjPEVvA41xEUyxS22Z2nTYHGYwi4CBH/";
     string public baseExtension = ".json";
     uint256 public cost = 0.001 ether;
     bool public paused = false;
@@ -18,7 +20,7 @@ contract NFT is ERC721Enumerable, Ownable {
     uint256 public tokenIds;
     bool public revealed = false;
     string public notRevealedUri =
-        "ipfs://QmUXmCQDCxVnSzSDCs5V2bYXugtbFEU1UJ7CcwnEM5wDSm/hidden.json";
+        "ipfs://QmTAdRcEUX2tqVQLYYJQ5uotNn6cmLcajRk6rTAGyYziw6/hidden.json";
     bool public presaleStarted;
     uint256 public presaleEnded;
 
@@ -27,8 +29,17 @@ contract NFT is ERC721Enumerable, Ownable {
         _;
     }
 
-    constructor(address presaleContract) ERC721("Pandas", "PA") {
-        presale = Register(presaleContract);
+    constructor() ERC721("Pandas", "PA") {
+    }
+
+    function addAddress() public {
+        require(
+            !presaleAddresses[msg.sender],
+            "Your already Registered for Presale"
+        );
+        require(countAddr < maxPresaleAddr, "Limit exceeded  for Register");
+        presaleAddresses[msg.sender] = true;
+        countAddr += 1;
     }
 
     function startPresale() public onlyOwner {
@@ -44,7 +55,7 @@ contract NFT is ERC721Enumerable, Ownable {
             "Presale is not started"
         );
         require(
-            presale.presaleAddresses(msg.sender),
+            presaleAddresses[msg.sender],
             "You are not Registered to Presale"
         );
         require(supply < maxSupply, "No NFT to mint");

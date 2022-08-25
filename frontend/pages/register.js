@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import Web3Modal from "web3modal";
 import { providers, Contract } from "ethers";
 import { useEffect, useRef, useState } from "react";
-import { PRESALE_CONTRACT_ADDRESS, PRESALE_CONTRACT_ABI } from "../constants";
+import { NFT_CONTRACT_ADDRESS, NFT_CONTRACT_ABI } from "../constants";
 
 export default function Home() {
   const [walletConnected, setWalletConnected] = useState(false);
@@ -39,8 +39,8 @@ export default function Home() {
       const signer = await getProviderOrSigner(true);
 
       const whitelistContract = new Contract(
-        PRESALE_CONTRACT_ADDRESS,
-        PRESALE_CONTRACT_ABI,
+        NFT_CONTRACT_ADDRESS,
+        NFT_CONTRACT_ABI,
         signer
       );
 
@@ -62,8 +62,8 @@ export default function Home() {
       const provider = await getProviderOrSigner();
 
       const whitelistContract = new Contract(
-        PRESALE_CONTRACT_ADDRESS,
-        PRESALE_CONTRACT_ABI,
+        NFT_CONTRACT_ADDRESS,
+        NFT_CONTRACT_ABI,
         provider
       );
 
@@ -78,8 +78,8 @@ export default function Home() {
     try {
       const signer = await getProviderOrSigner(true);
       const whitelistContract = new Contract(
-        PRESALE_CONTRACT_ADDRESS,
-        PRESALE_CONTRACT_ABI,
+        NFT_CONTRACT_ADDRESS,
+        NFT_CONTRACT_ABI,
         signer
       );
 
@@ -98,8 +98,8 @@ export default function Home() {
     try {
       const provider = await getProviderOrSigner();
       const whitelistContract = new Contract(
-        PRESALE_CONTRACT_ADDRESS,
-        PRESALE_CONTRACT_ABI,
+        NFT_CONTRACT_ADDRESS,
+        NFT_CONTRACT_ABI,
         provider
       );
       const _maxPresaleAddr = await whitelistContract.maxPresaleAddr();
